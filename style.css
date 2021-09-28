@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;0,900;1,200;1,900&family=Permanent+Marker&family=Raleway:ital,wght@0,100;0,500;1,100;1,500&display=swap');
+
+.bg-color-black-clear{
+    background-color:#447BBE;
+}
+
+.bg-color-black-clear{
+    background-color:#447BBE;;
+    color:#447BBE;
+}
+
+.paralax{
+    background:linear-gradient(to rigth,rgb(0,0,0,0.5), rgb(45,55,132,.7)),url("images.jfif");
+    height:85vh;
+    background-attachment:fixed;
+    background-position:100% 35%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    animation: alternate expansion 2.5s infinite; 
+}
+body{
+    margin: 0;
+
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: permanent marker;
+    font-size: 1.5rem;
+    padding: 20px 0px;
+    transition: all .8s;
+}
+
+.h1{
+    animation: alternate expansion-h1 4s infinite;
+}
+
+.h1,
+p{ 
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav ul{
+    text-decoration: none;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li a{
+    text-decoration: flex;
+    justify-content: space-evenly;
+    font-family:"monserrat", sans-serif;
+    font-weight: 600;
+    color: cornflowerblue;
+}
+
+nav ul li {
+    padding: 25px 15px;
+    transition: all 600ms;
+}
+
+nav ul li:hover {
+    background-color: cornsilk;
+}
+
+section{
+    padding:40px 65px;
+    text-align: center;
+}
+
+section.row {
+    padding:20px 35px;
+
+}
+
+section h2,
+section button {
+    font-family:Raleway;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+section h3,
+section p,
+section label,
+input,
+textarea,
+footer {
+    font-family: Montserrat;
+    font-weight: 300;
+}
+section#Que-es h3,
+section#Que-es h2{
+    text-align: center;
+}
+section#Que-es div.row p {
+    padding: 15px 45px;
+    width: 50%;
+    text-align: justify;
+}
+
+section#Que-es img {
+    border-radius: 50%;
+}
+section#services{
+    height: 85%;
+}
+
+section#services{
+    text-align: center;
+    color: aqua;
+}
+
+section#servides div.row:nth-child(1){
+    text-align: center;
+}
+
+section#sevices div.row:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section#services div.row:nth-child(2) article:nth-child(odd) {
+    background-color:burlywood;
+}
+
+section#services div.row:nth-child(2) article:nth-child(even) {
+    background-color:aqua
+}
+
+section#services div.row article {
+    width: 25%;
+    height: 200px;
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: all 300ms;
+}
+
+section#services div.row article:hover {
+    transform: scale3d(1.2, 1.2, 1.2) rotateY( 360deg) translateZ(50px);
+}
+
+section#services div.row article h2 {
+    font-size: 1.5rem;
+}
+
+section#gallery img {
+    transition: all 300ms;
+    width: 400px;
+}
+
+section#gallery img:hover {
+    transform: scale3d(1.5, 1.5, 1.5) rotateY( 180deg) translateY(30px);
+}
+
+section#contact-me {
+    height: 85%;
+}
+
+section#contact-me div.row:nth-child(1) {
+    text-align: center;
+    color:cadetblue;
+}
+
+section#contact-me label {
+    color: black;
+}
+
+section#contact-me form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#contact-me form * {
+    background: transparent;
+    color: #fff;
+}
+
+section#contact-me form input,
+section#contact-me form textarea {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+section#contact-me form button {
+    cursor: pointer;
+    border: none;
+    background-color: #2B3784;
+    padding: 15px 30px;
+    transition: all 300ms;
+    font-size: 1.15rem;
+}
+
+section#contact-me form button:hover {
+    background: #447BBE;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    background: #2b3784;
+    padding: 8px 0;
+}
+
+footer div.row {
+    padding: 12px 0px;
+}
+
+footer div.row a,
+footer div.row p {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer div.row a {
+    transition: all 300ms;
+}
+
+footer div.row a:hover {
+    font-size: 120%;
+}
+
+a#btn-floating {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    border-radius: 50%;
+    font-size: 2rem;
+    background:black;
+    color:wheat;
+    padding: 10px 15px;
+    transition: all 300ms;
+}
+
+a#btn-floating:hover {
+    background: #fff;
+    color: black;
+    transform: scale(1.3);
+}
+@keyframes expansion {
+    from {
+        background-position-y: 35%;
+    }
+    to {
+        background-position-y: 45%;
+    }
+}
+
+@keyframes expansion-h1 {
+    from {
+        font-size: 2em;
+    }
+    to {
+        font-size: 5rem;
+        /*muchas gracias por su*/
+    }
+}
